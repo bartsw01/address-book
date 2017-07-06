@@ -1,0 +1,13 @@
+h1{
+  text-align: center;
+}
+#formAddress{
+  border: 3px;
+  background-color: gray;
+  border-color: black;
+  padding: 5%;
+}
+
+#contact{
+  display: none;
+}
