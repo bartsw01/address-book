@@ -12,14 +12,15 @@ $(document).ready(function() {
     $(".phoneNumber").text(phoneNumberInput);
     $(".emailAddress").text(emailAddressInput);
     $("#contact").show();
-    $(".panel-body").hide();
-    $("#addressRow").prepend('<div class ="panel panel-success"> <div class = "panel-heading">' + firstNameInput + lastNameInput + '</div><div class="panel-body"' + addressInput + phoneNumberInput + emailAddressInput + '</div>');
+    // $(".panel-body").hide();
+    $("#addressRow").prepend('<div class ="panel panel-success"> <div class = "panel-heading">' + firstNameInput + lastNameInput + '</div><div class="panel-body">' + addressInput + phoneNumberInput + emailAddressInput + '</div>');
 
+    $(".panel-success").first().click(function(){
+      $(this).find(".panel-body").toggle();
+      // $(this).find(".panel-heading").toggle();
+    });
     // $("ul#user").prepend("<li>Hello!</li>");
     event.preventDefault();
   });
-  $(".panel-success").click(function(){
-    $(this).find(".panel-body").toggle();
-    // $(this).find(".panel-heading").toggle();
-  });
+
 });

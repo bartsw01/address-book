@@ -8,6 +8,6 @@ h1{
   padding: 5%;
 }
 
-#contact{
+.panel-body{
   display: none;
 }
